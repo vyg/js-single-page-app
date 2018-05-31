@@ -1,0 +1,30 @@
+.to-do__items {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 0;
+    margin: 48px 12px;
+}
+
+.to-do__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 100%;
+    background-color: #e8e8e8;
+    padding: 12px;
+    margin: 0 -12px;
+}
+
+.to-do__item:nth-child(even) {
+    background-color: var(--white);
+}
+
+.to-do__add {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 12px;
+}

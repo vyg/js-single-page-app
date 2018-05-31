@@ -2,4 +2,43 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --black: #000;
+  --white: #FFF;
+  --orange: #EC814D;
+}
+
+
+.center {
+  max-width: 500px;
+  margin: 0 auto;
+
+  padding: 30px;
+  margin-top: 70px;
+}
+
+.btn {
+  background-color: var(--orange);
+  padding: 12px;
+  border-radius: 2px;
+  border: none;
+  width: 120px;
+  font-size: 14px;
+  color: var(--white);
+}
+
+
+
+.btn-full {
+  width: 100%;
+}
+
+input {
+  margin-right: 24px;
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid var(--black);
 }
