@@ -28,6 +28,7 @@ body {
   width: 120px;
   font-size: 14px;
   color: var(--white);
+  cursor: pointer;
 }
 
 
