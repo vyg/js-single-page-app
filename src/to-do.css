@@ -1,3 +1,7 @@
+.hide {
+    display: none !important;
+}
+
 .to-do__items {
     padding: 0;
     margin: 0;
@@ -19,6 +23,11 @@
     margin: 0 -12px;
 }
 
+.to-do__item.done .to-do__item__text {
+    text-decoration: line-through;
+    color: #d0d0d0;
+}
+
 .to-do__item:nth-child(even) {
     background-color: var(--white);
 }
@@ -27,4 +36,16 @@
     display: flex;
     justify-content: space-between;
     margin: 0 12px;
+}
+
+.to-do__item__done {
+    flex: 0 0 10px;
+}
+
+.to-do__item__text {
+    flex: 1;
+}
+
+.to-do__no_completed__btn {
+    margin-bottom: 12px;
 }
