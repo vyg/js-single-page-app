@@ -39,20 +39,20 @@ class ToDoItem {
 
         // this.element.addEventListener("dragover", (e) => this.dragover(e))
         // this.element.addEventListener("dragenter", (e) => this.dragenter(e))
-        // this.element.addEventListener("drop", (e) => this.drop(e))
+        this.element.addEventListener("drop", (e) => this.drop(e))
         // this.element.addEventListener("dragstart", (e) => this.dragstart(e))
     }
 
-    // drop(e) {
-    //     console.log('drop', e);
-    //     // const newEl = this.element.cloneNode(true);
-    //     // this.element.remove();
-    //     // console.log(newEl);
+    drop(e) {
+        console.log('drop', e);
+        // const newEl = this.element.cloneNode(true);
+        // this.element.remove();
+        // console.log(newEl);
         
-    //     // this.list.insertAdjacentElement('afterbegin', newEl);
-    //     // this.element = newEl;
-    //     // this.initElement();
-    // }
+        // this.list.insertAdjacentElement('afterbegin', newEl);
+        // this.element = newEl;
+        // this.initElement();
+    }
     // dragstart(e) {
     //     console.log('dragstart', e.target.dataset.key);
     //     console.log('dragstart', e);
@@ -92,7 +92,6 @@ class ToDoItem {
     template() {
         return (
             ` <li class="to-do__item" data-key="${this.count}" draggable="true">
-                <p>${this.count}</p>
                 <input id="checkBox" type="checkbox" class="to-do__item__done">
                 <div class="to-do__item__text">${this.label}</div> 
                 <button class="btn to-do__item__delete" type="button">Delete</button>
